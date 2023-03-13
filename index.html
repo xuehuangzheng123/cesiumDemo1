@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta itemprop="appCode" content="analysis" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%- title %></title>
+		<link id="themeLinkId" rel="stylesheet" href="http://10.1.3.82:8080/file/themes/quequan/默认主题/cssvar.css" />
+		<script src="/lib/include-lib.js" libpath="/lib/" include="turf,tudou3d,mapserver"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<style>
+				html,
+				body,
+				#app {
+					width: 100%;
+					height: 100%;
+					margin: 0;
+					padding: 0;
+				}
+				.loading-box {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+				}
+				.loading-box .loading-wrap {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 98px;
+				}
+			</style>
+			<div class="loading-box">
+				<div class="loading-wrap">
+					<img src="/page_loading.gif" alt="" />
+				</div>
+			</div>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>

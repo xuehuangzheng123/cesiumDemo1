@@ -1,0 +1,28 @@
+{
+	"code": 200,
+	"data": [
+		{
+			"path": "/sysConfig",
+			"name": "sysConfig",
+			"redirect": "/",
+			"meta": {
+				"icon": "overview",
+				"title": "系统设置",
+				"isFull": true
+			},
+			"children": [
+				{
+					"path": "/analysis/sysConfig/catalogManagement",
+					"name": "catalogManagement",
+					"component": "/analysis/sysConfig/catalogManagement/index",
+					"meta": {
+						"icon": "",
+						"title": "编目管理",
+						"isFull": true
+					}
+				}
+			]
+		}
+	],
+	"msg": "成功"
+}

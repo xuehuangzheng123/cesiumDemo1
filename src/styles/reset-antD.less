@@ -1,0 +1,90 @@
+/* 重置 ant-design-vue 样式 */
+
+/* 全屏model - UI */
+.full1-modal {
+	overflow: hidden;
+	.ant-modal {
+		top: 72px;
+		max-width: 100%;
+		margin: 0;
+		padding-bottom: 0;
+	}
+	.ant-modal-content {
+		display: flex;
+		flex-direction: column;
+		height: calc(100vh - 72px);
+		border-radius: 16px 16px 0 0;
+		background-color: var(--pt-bg-card-color-normal);
+	}
+	.ant-modal-close {
+		top: -57px;
+		right: 16px;
+		.ant-modal-close-x {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: var(--pt-bg-color-page);
+			font-size: 18px;
+			line-height: 40px;
+		}
+	}
+	.ant-modal-body {
+		flex: 1;
+		height: 100%;
+		padding: 24px 0 0;
+	}
+}
+
+/* 全屏model - 开发 */
+.full-modal {
+	overflow: hidden;
+	.ant-modal {
+		top: 0;
+		max-width: 100%;
+		margin: 0;
+		padding-bottom: 0;
+	}
+	.ant-modal-content {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		background-color: var(--pt-bg-card-color-normal);
+	}
+	.ant-modal-body {
+		flex: 1;
+		height: 100%;
+		padding: 0;
+	}
+	.ant-modal-close {
+		top: -6px;
+		.ant-modal-close-x {
+			font-size: 18px;
+		}
+	}
+}
+
+/* 表格高度自适应（暂未使用） */
+.ant-table-wrapper1 {
+	height: calc(100% - 80px);
+	.ant-spin-nested-loading {
+		height: 100%;
+		.ant-spin-container {
+			height: 100%;
+			.ant-table {
+				height: calc(100% - 80px);
+				.ant-table-container {
+					height: 100%;
+					.ant-table-content {
+						height: 100%;
+						.ant-table-header {
+							height: 42px;
+						}
+						.ant-table-body {
+							height: calc(100% - 42px);
+						}
+					}
+				}
+			}
+		}
+	}
+}

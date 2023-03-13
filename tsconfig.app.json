@@ -1,0 +1,15 @@
+{
+	"//注释": "app应用-tsconfig配置",
+	"extends": "@vue/tsconfig/tsconfig.web.json",
+	"include": ["src/**/*", "src/**/*.vue", "src/**/*.json"],
+	"exclude": ["src/**/__tests__/*"],
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"composite": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"types": ["vite/client"]
+	}
+}

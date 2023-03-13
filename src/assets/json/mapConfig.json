@@ -1,0 +1,185 @@
+{
+	"offLine": true,
+	"scene": {
+		"center": {
+			"lat": 33.61816,
+			"lng": 108.43506,
+			"alt": 805360,
+			"heading": 360,
+			"pitch": -90
+		},
+		"contextOptions": {
+			"webgl": {
+				"alpha": true,
+				"depth": false,
+				"stencil": true,
+				"antialias": true,
+				"premultipliedAlpha": true,
+				"preserveDrawingBuffer": true,
+				"failIfMajorPerformanceCaveat": true
+			},
+			"allowTextureFilterAnisotropic": true
+		},
+		"fxaa": true,
+		"globe": {
+			"preloadAncestors": false
+		}
+	},
+	"terrain": {
+		"url": "/mapdata/terrain",
+		"show": false,
+		"requestMetadata": false
+	},
+	"control": {
+		"infoBox": false,
+		"baseLayerPicker": false
+	},
+	"basemaps": [
+		{
+			"id": 1,
+			"name": "天地图影像",
+			"type": "group",
+			"show": false,
+			"layers": [
+				{
+					"type": "tdt",
+					"name": "卫星",
+					"layer": "img_d",
+					"key": [
+						"79dbab637f181bf953e0334bfd179f3e",
+						"7dea3b9cbee02a0d5d15699a4d2cf9cb",
+						"de2d36347d44020b5bab35b48c958801",
+						"d0c7b65873a6b8961d42f656b6ef7ae7",
+						"d5ddf0de8791e734dc8a8296b90cea5e"
+					]
+				},
+				{
+					"name": "注记",
+					"type": "tdt",
+					"layer": "img_z",
+					"key": ["de2d36347d44020b5bab35b48c958801"]
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "天地图电子",
+			"type": "group",
+			"show": false,
+			"layers": [
+				{
+					"type": "tdt",
+					"name": "底图",
+					"layer": "vec_d",
+					"key": [
+						"79dbab637f181bf953e0334bfd179f3e",
+						"7dea3b9cbee02a0d5d15699a4d2cf9cb",
+						"de2d36347d44020b5bab35b48c958801",
+						"d0c7b65873a6b8961d42f656b6ef7ae7",
+						"d5ddf0de8791e734dc8a8296b90cea5e"
+					]
+				},
+				{
+					"name": "注记",
+					"type": "tdt",
+					"layer": "vec_z",
+					"key": ["de2d36347d44020b5bab35b48c958801"]
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "天地图地形地图",
+			"type": "group",
+			"show": false,
+			"layers": [
+				{
+					"type": "tdt",
+					"name": "底图",
+					"layer": "ter_d",
+					"key": [
+						"79dbab637f181bf953e0334bfd179f3e",
+						"7dea3b9cbee02a0d5d15699a4d2cf9cb",
+						"de2d36347d44020b5bab35b48c958801",
+						"d0c7b65873a6b8961d42f656b6ef7ae7",
+						"d5ddf0de8791e734dc8a8296b90cea5e"
+					]
+				},
+				{
+					"name": "注记",
+					"type": "tdt",
+					"layer": "ter_z",
+					"key": ["de2d36347d44020b5bab35b48c958801"]
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "离线天地图卫星",
+			"type": "group",
+			"show": false,
+			"layers": [
+				{
+					"url": "/mapdata/maptile/wgs3857imgD/{z}/{x}/{y}.jpg",
+					"type": "xyz",
+					"name": "卫星",
+					"minimumLevel": 3,
+					"maximumLevel": 16,
+					"minimumTerrainLevel": 3,
+					"maximumTerrainLevel": 18
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "离线天地图电子",
+			"type": "group",
+			"show": true,
+			"layers": [
+				{
+					"url": "/mapdata/maptile/wgs3857img/{z}/{x}/{y}.jpg",
+					"type": "xyz",
+					"name": "电子",
+					"minimumLevel": 1,
+					"maximumLevel": 13,
+					"minimumTerrainLevel": 1,
+					"maximumTerrainLevel": 16
+				},
+				{
+					"url": "/mapdata/maptile/wgs3857imgZ/{z}/{x}/{y}.png",
+					"type": "xyz",
+					"name": "注记",
+					"minimumLevel": 1,
+					"maximumLevel": 13,
+					"minimumTerrainLevel": 1,
+					"maximumTerrainLevel": 16
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "离线天地图地形地图",
+			"type": "group",
+			"show": false,
+			"layers": [
+				{
+					"url": "/mapdata/maptile/wgs3857vec/{z}/{x}/{y}.jpg",
+					"type": "xyz",
+					"name": "电子",
+					"minimumLevel": 1,
+					"maximumLevel": 13,
+					"minimumTerrainLevel": 1,
+					"maximumTerrainLevel": 16
+				},
+				{
+					"type": "xyz",
+					"name": "注记",
+					"minimumLevel": 1,
+					"maximumLevel": 13,
+					"minimumTerrainLevel": 1,
+					"maximumTerrainLevel": 16
+				}
+			]
+		}
+	]
+}

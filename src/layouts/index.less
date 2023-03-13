@@ -1,0 +1,25 @@
+:deep(.ant-layout) {
+	&.td-container {
+		height: 100vh;
+		overflow: hidden;
+	}
+	.ant-layout-header {
+		background: var(--pt-primary-color-dark);
+	}
+	.ant-layout-has-sider {
+		height: calc(100vh - 56px);
+	}
+	.ant-layout-sider {
+		background: var(--pt-bg-color-nav);
+	}
+	.ant-layout-content {
+		height: 100%;
+
+		/* padding: 0 24px 24px; */
+		.main-panel {
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+	}
+}

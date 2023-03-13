@@ -1,0 +1,12 @@
+declare module "nprogress";
+declare module "js-md5";
+declare module "echarts-liquidfill";
+declare module "qs";
+declare module "@potato/antd";
+declare module "lodash/cloneDeep";
+declare module "lodash/debounce";
+declare module "crypto-js";
+declare module "js-cookie";
+declare module "tinycolor2";
+declare module "lodash";
+declare module "terraformer-wkt-parser";

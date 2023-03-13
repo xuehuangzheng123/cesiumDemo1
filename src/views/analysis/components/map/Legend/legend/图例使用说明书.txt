@@ -1,0 +1,28 @@
+1. 关闭图例使用 
+  mittBus.emit('closeLegend');
+2. 打开图例使用 
+  mittBus.emit('openLegend',
+    {
+    map:当前map对象,
+    id:图层id，
+    url:服务原始url，
+    show:图例显隐，
+    position：图例位置（right/left），
+    filterNames:[]，对应图例的name关键字（目前只有年度信息使用），默认显示的传入的筛选条件;filterNames['耕地']
+    splitUserData:[], userData中不需要图例是使用的筛选条件  
+  });
+3.筛选图例内容后刷新图例
+ mittBus.emit('updateLegend',
+    {
+    id:图层id，
+    legendFilter:传入的筛选条件
+    splitUserData:[], userData中不需要图例是使用的筛选条件  
+    }
+ );
+4.图例最小化，最大化控制
+  mittBus.on('foldLegend', {
+    fold:false/true,  //是否折叠图例
+  });
+5.兼容坡度坡向的图例
+  mittBus.on('analysisResultLegend', (ele)=> {
+  });

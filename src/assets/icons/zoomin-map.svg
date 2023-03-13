@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="风格设计" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工具-地图控制" transform="translate(-430.000000, -398.000000)">
+            <g id="地图控制展开" transform="translate(362.000000, 252.000000)">
+                <g id="地图放大" transform="translate(68.000000, 146.000000)">
+                    <rect id="矩形" x="0" y="0" width="24" height="24" rx="4"></rect>
+                    <polygon id="路径" fill="#FFFFFF" points="13.1428572 13.1428572 13.1428572 20 10.8571428 20 10.8571428 13.1428572 4 13.1428572 4 10.8571428 10.8571428 10.8571428 10.8571428 4 13.1428572 4 13.1428572 10.8571428 20 10.8571428 20 13.1428572"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,124 @@
+.td-ant-hd {
+	display: flex;
+	align-items: center;
+	height: 56px;
+	line-height: 56px;
+	.sys-name {
+		color: var(--pt-text-color-stair-dark);
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.center-cont {
+		flex: 1;
+		width: 0;
+		height: 100%;
+		margin: 0 10px;
+	}
+	.tool-bar-right {
+		position: relative;
+	}
+	.message-icon {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		margin-top: -8px;
+		transform-origin: top;
+		&.message-anim {
+			animation: anim 1s linear infinite;
+		}
+		& > span {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		& > i {
+			position: absolute;
+			top: -2px;
+			right: -4px;
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background-color: red;
+			color: #ffffff;
+			font-size: 14px;
+			line-height: 12px;
+			text-align: center;
+			i {
+				scale: 0.8;
+				position: absolute;
+				left: 3.5px;
+			}
+		}
+	}
+}
+@keyframes anim {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	50% {
+		transform: rotate(0);
+	}
+}
+.big-avatar {
+	border-radius: 50%;
+}
+.small-avatar {
+	border-radius: 50%;
+	cursor: pointer;
+}
+.userInfo {
+	width: 230px;
+	height: 46px;
+	margin: 15px 0;
+}
+.font-black {
+	color: rgb(0 0 0 / 90%);
+	font-family: "PingFang SC, PingFang SC-Medium";
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22px;
+}
+.font-grey {
+	color: rgb(0 0 0 / 64%);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.grey-line {
+	width: 262px;
+	height: 1px;
+	margin-right: -16px;
+	margin-left: -16px;
+	opacity: 0.4;
+	background: rgb(0 0 0 / 16%);
+	font-family: "PingFang SC, PingFang SC-Regular";
+}
+.analysis-menu {
+	background: var(--pt-primary-color-dark);
+	:deep(.ant-menu-item) {
+		color: #ffffff;
+		a {
+			color: #ffffff;
+		}
+	}
+	:deep(.ant-menu-item-selected) {
+		.ant-menu-title-content {
+			padding: 5px 8px;
+			border-radius: 2px;
+			background: #5c89e2;
+		}
+	}
+}
+.font-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
